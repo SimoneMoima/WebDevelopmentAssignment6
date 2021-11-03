@@ -1,0 +1,164 @@
+header{
+    background-color: darkcyan;
+}
+
+.logo{
+    margin-left: 5px;
+    padding: 3px;
+}
+
+.header-nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: solid;
+    border-color:black;
+}
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;   
+}
+
+li{
+    float: right;  
+    text-align: center; 
+  }
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px 12px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #111;
+  }
+
+.bodyheader{
+    text-align: center;
+}
+
+h1{
+    color :darkblue;
+    margin-left: 3cm;
+}
+
+/*This is the font and the background color for the body part*/
+body{
+    background-color:#f4f4f4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*These are the styles for the table that displays all available products*/
+.grid-table{
+    display: grid;
+    padding: 50px;
+}
+
+.styled td, .styled th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+.styled tr:nth-child(even){background-color:darkgray}
+  
+.styled tr:hover {background-color:rgb(148, 199, 201);}
+
+.styled th {
+    padding: 12px;
+    text-align: left;
+    background-color:burlywood;
+    color: white;
+  }
+
+/*There are two grid items in the grid-container: select Manufacturer and Component Type, type in Modelnumber and Quantity*/
+.grid-container{
+    /*This is the grid layout to place the two components next to each other. */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
+    align-items: center;
+    padding: 40px;
+    gap: 90px;
+   
+}
+
+/* 4 Components of the two gird items: Two select menues to select Manufacturer and Type and.. */
+.component{
+    padding: 10px;
+}
+
+select{
+    width: 100%;
+    padding: 20px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+  
+/* ...two input rows in the grid-container to input Modelnumber and Quantity*/
+.comp{
+    width: 100%;
+    border-color: black;
+    border-radius: 25px;
+    border-style: hidden;
+    background-color: gainsboro;
+    padding: 16px 20px;
+}
+
+/* This is used to input Delivery and Personal Details*/
+aside{
+    background-color:burlywood;
+    margin-left: 1cm;
+    margin-right: 19cm;
+    margin-bottom: 1cm;
+    padding: 30px;
+}
+.textarea{
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+.terms-and-conditions{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+   
+}
+
+.order_button{
+    display: grid;
+    grid-template-columns: 1fr;
+   padding-left: 600px; 
+    
+}
+.button {
+    background-color:darkcyan;
+    border: solid;
+    border-color:white;
+    color:black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+/*Following includes everything necessary for the footer*/
+footer{
+    background-color: darkcyan;
+}
+
+.address_footer{
+    margin-left: 32cm;
+    padding: 1px;
+}
+
+
